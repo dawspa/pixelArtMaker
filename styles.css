@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+    background: url("abstract-1779564_1920.png") repeat-x;
+}
+
+h1 {
+    font-family: Monoton, sans-serif;
+    font-size: 70px;
+    margin: 0.2em;
+    color: #310580;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+h2, h3, form {
+    margin: 1em 1em 1em 0.25em;
+    font-family: VT323, sans-serif;
+    color: white;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.5s ease 0s;
+}
+
+button:hover {
+    box-shadow: inset 0 0 0 5px rgb(255, 255, 255);
+    color: black;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.orange {
+    background-color: #ff7f00;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.indigo {
+    background-color: #4b0082;
+}
+
+.violet {
+    background-color: #9400d3;
+}

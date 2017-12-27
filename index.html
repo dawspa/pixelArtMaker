@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="designs.js"></script>
+</head>
+<body>
+<h1>Lab: Pixel Art Maker</h1>
+
+<h2>1. Choose Grid Size</h2>
+<form id="sizePicker">
+    Grid Height:
+    <input type="number" id="input_height" name="height" min="1" value="6">
+    Grid Width:
+    <input type="number" id="input_width" name="width" min="1" value="6">
+    <input type="submit" value="Start!">
+</form>
+
+<h2>2. Pick A Color</h2>
+<input type="color" id="colorPicker">
+
+<h2>OR</h2>
+
+<h2 class="quickpick">Quickpick!</h2>
+<button class="red" type="button">Red</button>
+<button class="orange" type="button">Orange</button>
+<button class="yellow" type="button">Yellow</button>
+<button class="green" type="button">Green</button>
+<button class="blue" type="button">Blue</button>
+<button class="indigo" type="button">Indigo</button>
+<button class="violet" type="button">Violet</button>
+
+<h2>3. Design Your pixel art:</h2>
+<h3><em>Left click or hold&drag LMB to draw, double click to erase</em></h3>
+<table id="pixel_canvas" onmousedown="return false"></table>
+
+</body>
+</html>
