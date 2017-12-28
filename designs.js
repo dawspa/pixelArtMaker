@@ -21,25 +21,33 @@ $(function () {
 
     //quickpicker handling
     const color = $('#colorPicker');
-    $(".red").click(function () {
+    var red = $(".red");
+    var orange = $(".orange");
+    var yellow = $(".yellow");
+    var green = $(".green");
+    var blue = $(".blue");
+    var indigo = $(".indigo");
+    var violet = $(".violet");
+
+    $(red).click(function () {
         color.val('#ff0000');
     });
-    $(".orange").click(function () {
+    $(orange).click(function () {
         color.val('#ff7f00');
     });
-    $(".yellow").click(function () {
+    $(yellow).click(function () {
         color.val('#ffff00');
     });
-    $(".green").click(function () {
+    $(green).click(function () {
         color.val('#00ff00');
     });
-    $(".blue").click(function () {
+    $(blue).click(function () {
         color.val('#0000ff');
     });
-    $(".indigo").click(function () {
+    $(indigo).click(function () {
         color.val('#4b0082');
     });
-    $(".violet").click(function () {
+    $(violet).click(function () {
         color.val('#9400d3');
     });
 
