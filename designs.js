@@ -19,6 +19,8 @@ $(function () {
         canvas.append(grid);
     });
 
+    //test gh pages merge
+
     //quickpicker handling
     const color = $('#colorPicker');
     var red = $(".red");
