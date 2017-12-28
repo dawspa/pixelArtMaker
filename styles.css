@@ -1,8 +1,18 @@
-body {
-    text-align: center;
-    background: url("abstract-1779564_1920.png") repeat-x;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    text-align: center;
+    background: url("abstract-1779564_1920.png") repeat left top;
+}
+
+.content {
+    background-color: #363143;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
 h1 {
     font-family: Monoton, sans-serif;
     font-size: 70px;
