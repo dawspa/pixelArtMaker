@@ -13,6 +13,7 @@ body {
     display: block;
     margin: auto;
 }
+
 h1 {
     font-family: Monoton, sans-serif;
     font-size: 70px;
@@ -22,7 +23,7 @@ h1 {
 }
 
 h2, h3, form {
-    margin: 1em 1em 1em 0.25em;
+    margin: 1em 1em 0.2em;
     font-family: VT323, sans-serif;
     color: white;
 }
@@ -98,3 +99,18 @@ button:hover {
 .violet {
     background-color: #9400d3;
 }
+
+.black {
+    background-color: #000000;
+    margin-bottom: 10px;
+}
+
+.black:hover {
+    color: white;
+}
+
+.finish {
+    border: hidden;
+    background-color: transparent;
+}
+

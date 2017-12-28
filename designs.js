@@ -19,8 +19,6 @@ $(function () {
         canvas.append(grid);
     });
 
-    //test gh pages merge
-
     //quickpicker handling
     const color = $('#colorPicker');
     var red = $(".red");
@@ -53,20 +51,36 @@ $(function () {
         color.val('#9400d3');
     });
 
+    //draw both by clicking once or dragging
+    //LMB to draw, RMB to erase
+    $('#pixel_canvas').on('mousedown', 'td', function (e) {
+        var key = e.keyCode || e.which;
 
-    //double click erasing
-    $('#pixel_canvas').on('dblclick', 'td', function () {
-        $(this).css("backgroundColor", "transparent");
+        switch (key) {
+            case 1:
+                $('#pixel_canvas').on('mouseleave', 'td', function () {
+                    $(this).css('background-color', color.val());
+                });
+                $('#pixel_canvas').on('mouseup', 'td', function () {
+                    $('#pixel_canvas').off('mouseleave');
+                    $(this).css('background-color', color.val());
+                });
+                break;
+
+            case 3:
+                $('#pixel_canvas').on('mouseleave', 'td', function () {
+                    $(this).css('background-color', "transparent");
+                });
+                $('#pixel_canvas').on('mouseup', 'td', function () {
+                    $('#pixel_canvas').off('mouseleave');
+                    $(this).css('background-color', "transparent");
+                });
+                break;
+        }
     });
 
-    //draw both by clicking once or dragging
-    $('#pixel_canvas').on('mousedown', 'td', function () {
-        $('#pixel_canvas').on('mouseleave', 'td', function () {
-            $(this).css('background-color', color.val());
-        });
-        $('#pixel_canvas').on('mouseup', 'td', function () {
-            $('#pixel_canvas').off('mouseleave');
-            $(this).css('background-color', color.val());
-        });
+    //button for hiding the grid
+    $('#end').click('#pixel_canvas', function () {
+        $('td').toggleClass('finish');
     });
 });
