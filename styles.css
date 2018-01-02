@@ -18,14 +18,15 @@ h1 {
     font-family: Monoton, sans-serif;
     font-size: 70px;
     margin: 0.2em;
-    color: #fdfcff;
+    color: #00f8fb;
     text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
 h2, h3, form {
     margin: 1em 1em 0.2em;
+    font-size: 28px;
     font-family: VT323, sans-serif;
-    color: white;
+    color: #ffecdb;
 }
 
 h2:first-of-type {
@@ -58,7 +59,7 @@ input[type=number] {
 
 button {
     border: none;
-    color: white;
+    color: black;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -69,7 +70,6 @@ button {
 
 button:hover {
     box-shadow: inset 0 0 0 5px rgb(255, 255, 255);
-    color: black;
 }
 
 .red {
@@ -101,12 +101,9 @@ button:hover {
 }
 
 .black {
+    color: white;
     background-color: #000000;
     margin-bottom: 10px;
-}
-
-.black:hover {
-    color: white;
 }
 
 .finish {
